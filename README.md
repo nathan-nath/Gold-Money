@@ -1,2 +1,2 @@
-# Mon premier projet concernant HTML & CSS 
+# Mon premier projet en HTML & CSS 
 # Le site est pour le transfert d'argent partout dans le emonde
