@@ -1,0 +1,32 @@
+/* reset.css */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    line-height: 1.5rem;
+    background-color: #f8f7f7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img, picture, video, canvas, svg {
+    display: block !important;
+    max-width: 100% !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+ul, ol {
+    list-style: none !important;
+}

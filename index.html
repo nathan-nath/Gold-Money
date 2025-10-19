@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gold money transfert - the future banking</title>
     <!-- integration css -->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -14,28 +16,24 @@
     <header>
         <!-- Conteneur principal -->
         <div class="container">
-            <!-- Contenus principal du header -->
-            <div class="header-content">
-                <div class="logo">
-                    <h2><a href="#"><i class="fa-solid fa-money-bills"></i>&nbsp;Gold Money Transfer</a></h2>
-                    <button class="drop-btn"></button>
-                </div>
-                <div class="menu-bloc">
-                    <nav class="menu">
-                        <ul>
-                            <li><a href="#">personal</a></li>
-                            <li><a href="#">features</a></li>
-                            <li><a href="#">pricing</a></li>
-                        </ul>
-                    </nav>
-                    <div class="header-cto">
-                        <button class="btn-white">login</button>
-                        <button class="btn-darkgreen">sign up</button>
+            <div class="nav">
+                <!-- Logo -->
+                <div class="brand"><a href="#"><i class="fa-solid fa-money-bills"></i>&nbsp;Gold Money Transfer</a></div>
+                <nav>
+                    <div class="hamburger" id="hamburger">
+                        <span></span><span></span><span></span>
                     </div>
-                </div>
+                    <!-- Menu -->
+                    <ul id="menu">
+                        <li class="border-bt"><a class="link" href="#">personal</a></li>
+                        <li class="border-bt"><a class="link" href="#">features</a></li>
+                        <li class="border-bt"><a class="link mg-right" href="#">pricing</a></li>
+                        <li><a class="cta cta-login" href="#">login</a></li>
+                        <li><a class="cta cta-sign" href="#">sign up</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <!-- Fin conteneur principal header -->
     </header>
     <!-- Fin de header -->
 
@@ -47,7 +45,7 @@
                 <div class="content">
                     <div class="modern-bank tcolor">modern bank</div>
                     <h1>we're building the future bank just for you</h1>
-                    <p>Easy and fast international business account that saves you money wherever you want to use it.</p>
+                    <p class="p-text">Easy and fast international business account that saves you money wherever you want to use it.</p>
                     <div class="hero-cto">
                         <button class="btn-darkgreen">get started now</button>
                         <button class="btn-white">learn more &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
@@ -59,6 +57,7 @@
                         <p>ramp &nbsp;<i class="fa-solid fa-truck-ramp-box"></i></p>
                     </div>
                 </div>
+
                 <div class="content-img">
                     <div class="hero-img">
                         <img src="img/8e7c8180a93dceb223c72f3ad0e795ee.jpg" alt="">
@@ -137,6 +136,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="currency-doc">
                     <div class="currency-title tcolor">currency</div>
                     <h2 class="title">hold and send money in 190+ currencies</h2>
@@ -160,7 +160,7 @@
                 </div>
                 <div class="payment-img">
                     <div class="payment-img-content">
-                        <div class="payment-number">-$50.0</div>
+                        <div class="payment-number"></div>
                     </div>
                 </div>
             </div>
@@ -177,6 +177,7 @@
                     <p>we are on a mission to bring transparency to finance and show you upfront.</p>
                     <button class="btn-darkgreen large-btn"><i class="fa-solid fa-circle-play"></i> &nbsp; watch video guide</button>
                 </div>
+
                 <div class="watch-text">
                     <div class="security-teams">
                         <i class="fa-solid fa-lock grey-block"></i>
@@ -212,6 +213,7 @@
                 <h2 class="title">Plans for every budget</h2>
                 <p class="text-pricing">Whether you're a small business, or large corporation, you have a plans that's right for you.</p>
             </div>
+
             <div class="pricing-content">
                 <div class="personal">
                     <h3 class="personal-title">Personal</h3>
@@ -221,6 +223,7 @@
                     </div>
                     <button class="btn-darkgreen">Try for free</button>
                 </div>
+
                 <div class="business">
                     <div class="business-content">
                         <h3 class="business-title">Business</h3>
@@ -339,6 +342,7 @@
                     <button class="btn-darkgreen">Open account</button>
                     <button class="btn-transparent">Book a demo</button>
                 </div>
+
                 <div class="join-form">
                     <form action="" method="post">
                         <div>
@@ -419,8 +423,8 @@
                     <div class="social-media">
                         <span>Follow us on</span>
                         <ul>
-                            <li><a href="#"><i class="fa-brands fa-facebook-f social-media-footer"></i></a></li>
                             <li><a href="#"><i class="fa-brands fa-linkedin-in social-media-footer"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f social-media-footer"></i></a></li>
                             <li><a href="#"><i class="fa-brands fa-instagram social-media-footer"></i></a></li>
                         </ul>
                     </div>
@@ -428,8 +432,8 @@
             </div>
             <hr>
             <div class="copyright">
-                <h2 class="logo"><a href="#"><i class="fa-solid fa-money-bills"></i>&nbsp;Gold Money Transfert</a></h2>
-                <p>&copy; 2025 gold money transfert all right reserved</p>
+                <div class="brand"><a href="#"><i class="fa-solid fa-money-bills"></i>&nbsp;Gold Money Transfer</a></div>
+                <p class="y"> &copy;<span id="year"></span> gold money transfert all right reserved</p>
                 <div class="footer-nav">
                     <p><a href="#">Terms</a></p>
                     <p><a href="#">Privacy</a></p>
@@ -439,6 +443,8 @@
         </div>
     </footer>
     <!-- End footer -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

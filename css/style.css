@@ -1,14 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* box-sizing permet à ce que les contenus de la boite ne puissent pas deborder en dehors de la boite */
-}
-/* BODY DESIGN */
-body{
-    background-color: #f8f7f7;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 /* CONTAINER FOR ALL SECTIONS */
 .container{
     width: 80%; /* La largeur de la page à 80% */
@@ -34,8 +23,8 @@ body{
 .btn-darkgreen{
     cursor: pointer;
     background-color: #0d6161;
-    color: #f0f0f0;
-    padding: 12px 20px;
+    color: #f0f0f0 !important;
+    padding: 6px 30px !important;
     border: 1px solid #0d6161;
     border-radius: 10px;
     font-weight: 500;
@@ -46,18 +35,18 @@ body{
 /* HOVER FOR btn-darkgreen */
 .btn-darkgreen:hover{
     background-color: #f8fcfc;
-    color: #0d6161;
+    color: #0d6161 !important;
 }
 
 /* DESIGN FOR btn-white */
 .btn-white{
     cursor: pointer;
     background-color: #f8fcfc;
-    padding: 12px 20px;
+    padding: 6px 20px !important;
     border: 1px solid #0d6161;
     border-radius: 10px;
     text-decoration: none;
-    color: #0d6161;
+    color: #0d6161 !important;
     font-weight: 500;
     font-size: 15px;
     text-transform: capitalize;
@@ -66,82 +55,103 @@ body{
 /* HOVER FOR btn-white */
 .btn-white:hover{
     background-color: #0d6161;
-    color: #f0f0f0;   
+    color: #f0f0f0 !important;   
 }
 
 /* START HEADER DESIGN */
-header{
+header {
+    background: #fff;
     padding: 12px 0;
-    width: 100%;    
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
     border-bottom: 1px solid #d8d0d0;
+    width: 100%;
 }
 
-.drop-btn{
-    display: none;
-}
-
-/* HEADER CONTENT */
-.header-content{
-    display: flex;
-    /* /* align-items: center; */
-    justify-content: space-between;
-}
-
-/* MENU BLOC */
-.menu-bloc{
+header .nav {
     display: flex;
     justify-content: space-between;
-    gap: 350px;
     align-items: center;
 }
 
-.menu-bloc .menu ul{
-    display: flex;       /* DISORDER LIST DISPLAY FLEX */
-    padding-top: 10px;
-    gap: 40px;           /* SPACES BETWEEN NAV */
-}
-
-/* DESIGN FOR LOGO */
-.fa-money-bills{
-    font-size: 18px;      /* LOGO SIZE */
-    color: #0d6161;     /* COLOR LOGO */
-}
-
-/* TEXT DU LOGO */
-header a{
+header .brand .fa-money-bills,
+header .brand a {
+    font-weight: 700 !important;
     font-size: 18px;
-    text-decoration: none;  /* REMOVE TEXT DECORATION */
-    color: #0d010d;       /* COLOR LOGO TEXT */
+    color: #0d6161 !important;
 }
 
-/* LIST ITEMS FOR MENU */
-.menu ul li{
-    list-style-type: none;          /* REMOVE STYLE STYLE */
-    text-transform: capitalize;     /* UPPERCASE FIRST LETTER */
-    font-size: 16px;                /* SIZE TEXT MENU */
-    font-weight: 600;               /* FONT WEIGHT UN PEU BOLD */
-    letter-spacing: 1.5px;          /* SPACE LETTER FOR TEXT MENU */
-}
-
-.menu li a{
-    padding-bottom: 5px;    /* SPACE BOTTOM */
-}
-/* END MENU DESIGN */
-
-/* CALL TO ACTION FOR LOGIN BUTTON */
-.header-cto{
+/* Menu */
+nav ul {
     display: flex;
-    gap: 15px;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
 }
 
-/*  */
-.menu ul li a:hover{
-    border-bottom: 3px solid #0d6161;
-    color: #0d6161;
+header nav a.link {
+    font-weight: 500;
+    color: #333;
+    text-transform: capitalize;
+}
+
+header nav a.link:hover {
+    border-bottom: 2px solid #0d6161;
+    padding-bottom: 5px;
+}
+
+nav .mg-right {
+    margin-right: 10rem;
+}
+
+nav .cta {
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+
+nav .cta-login {
+    background-color: #0d6161;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+    padding: 6px 30px;
+}
+
+nav .cta-login:hover {
+    background-color: #fff;
+    border: 1px solid #0d6161 !important;
+    color: #0d6161 !important;
+}
+
+nav .cta-sign {
+    border: 1px solid #0d6161;
+    color: #0d6161 !important;
+    padding: 6px 22px;
+}
+
+nav .cta-sign:hover {
+    background-color: #0d6161;
+    border: 1px solid #fff !important;
+    color: #fff !important;
+}
+
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+    transition: 0.2s;
 }
 
 /* HERO SECTION STYLING */
-
 .hero{
     width: 100%;
 }
@@ -329,6 +339,8 @@ form .grid-layout{
 }
 /* END STATISTIQUE SECTION */
 
+
+/* Currency */
 .currency-content{
     display: flex;
     align-items: center;
@@ -417,7 +429,8 @@ form .grid-layout{
     font-size: 20px;
     font-weight: bold;
 }
- 
+
+/* PAYMENT SECTION */
 .payment-content{
     display: flex;
     align-items: center;
@@ -455,6 +468,7 @@ form .grid-layout{
     text-transform: inherit;
 }
 
+/* Strategy */
 .strategy-content{
     display: flex;
     align-items: center;
@@ -503,6 +517,7 @@ form .grid-layout{
     font-size: 20px;
 }
 
+/* Pricing */
 .pricing-main{
     margin: 100px 0 80px 0;
 }
@@ -794,7 +809,7 @@ footer .container{
 
 .footer-box ul li a{
     text-decoration: none;
-    color: #e2dcdcb3;
+    color: #c4c2c2 !important;
     font-size: 15px;
 }
 
@@ -867,21 +882,27 @@ footer .container{
     border-radius: 5px;
 }
 
+hr {
+    color: #f0f0f0 !important;
+}
+
 .copyright{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.copyright .logo a{
+.copyright .brand .fa-money-bills,
+.copyright .brand a {
+    font-weight: 700 !important;
     font-size: 18px;
-    text-decoration: none;
-    color: #f0f0f0;
+    color: #f0f0f0 !important;
 }
 
-.copyright .logo .fa-money-bills{
-    font-size: 18px;
-    background-color: #0d6161;
+.copyright .y {
+    text-transform: capitalize;
     color: #f0f0f0;
+    margin-top: 15px;
 }
 
 .copyright p{
@@ -909,272 +930,3 @@ footer .container{
 
 
 
-@media only screen and (max-width:600px){
-
-       
-    .header-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: auto;
-    }
-
-    .header-content .logo{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .drop-btn{
-        display: block;
-        position: absolute;
-        background-color: #0d6161;
-        padding: 12px;
-        right: 5%;
-    }
-
-    .menu-bloc{
-        display: none;
-        flex-direction: column;
-        justify-content: end;
-        gap: 0;
-        align-items: end;
-        z-index: -1;
-    }
-
-    .menu-bloc .menu ul{
-        flex-direction: column;
-        padding: 5px;
-        gap: 20px;
-    }
-
-    .menu-bloc:hover .drop-btn{
-        display: inherit;
-        z-index: 1;
-    }
-
-    .header-cto{
-        flex-direction: column;
-    }
-    
-    .fa-money-bills, header a{
-        font-size: 15px;
-    }
-
-    .hero-content{
-        flex-direction: column;   
-        gap: 40px;
-    }
-
-    .modern-bank{
-        width: 50%;
-    }
-
-    .hero-content h1{        
-        font-size: 30px;        
-    }
-
-    .hero-cto .btn-darkgreen{
-        margin-bottom: 10px;
-    }
-
-    .hero-cto .btn-transparent{
-        margin-left: 0;
-    }
-
-    .hero-img img{
-        width: 100%;        
-    }
-
-    .hero-form{        
-        width: 85%;      
-        margin-left: 0;        
-    }
-
-    .sondage-content{
-        flex-direction: column;
-        width: 90%;  
-        margin-left: 10px; 
-    }
-
-    
-    .currency-content{
-        flex-direction: column;
-        padding: 80px 20px;
-    }
-
-    .congo-flag{
-        margin-right: -20px;
-    }
-
-    .ue-flag{
-        margin-left: -40px;
-    }
-
-    .us-flag{
-        margin-right: -40px;
-    }
-
-    .payment-content{
-        flex-direction: column;
-        padding: 80px 20px;
-    }
-
-    .strategy-content{
-        flex-direction: column;
-        padding: 80px 20px;
-    }
-
-    .pricing-content{
-        flex-direction: column;
-        padding: 80px 20px;
-    }
- 
-    .center-title{
-        flex-direction: column;
-        padding: 80px 20px;
-    }
-
-    .pricing-title{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .center-title h2{
-        text-align: center;
-    }
-
-    .business{
-        flex-direction: column;
-        padding: 80px 20px;
-    }
-
-    .join-content{
-        flex-direction: column;
-    }
-
-    .join-box{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: auto;
-    }
-
-    .join-box .btn-darkgreen{
-        margin-bottom: 10px;
-    }
-
-    .join-box .btn-transparent{
-        margin-left: 0;
-    }
-
-    .join-box .title{
-        text-align: center;
-    }
-
-    .join-box p{
-        width: auto;
-        text-align: center;
-    }
-
-    .join-form{
-        width: auto;
-    }
-
-    .join-form p{
-        font-size: 12px;
-    }
-     /* FOOTER RESPONSIVE */
-    footer{
-        padding: 50px 0 10px 0;
-    }
-    footer .container{
-        width: auto;    
-    }
-
-    .footer-content{
-        flex-direction: column;
-    }
-    
-    .footer-boxes{
-        grid-template-columns: repeat(1, 1fr);
-        gap: 0;
-        padding: 10px;
-    }
-    
-    .footer-box{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-top: 1px solid #f0f0f072;
-    }
-
-    .footer-box .platform{
-        flex-basis: 50%;
-    }
-
-    .footer-box ul{
-        flex-basis: 50%;
-    }
-    
-    .footer-form{
-        border-top: 1px solid #f0f0f072;
-        border-bottom: 1px solid #f0f0f072;
-        padding: 10px;
-    }
-
-    .footer-form h3{
-        text-align: center;   
-    }
-
-    .footer-form .input-mail{
-        border-radius: 20px;
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .footer-form .submit-send{
-        color: #f0f0f0;
-        border-radius: 20px;
-        width: 100%;
-        margin-left: 0%;
-    }
-
-    .accessories{
-        margin-top: 10px;
-        padding: 10px;
-    }
-
-    .accessories-content{
-        flex-direction: column;
-        justify-content: center;
-        gap: 0;
-        border-bottom: 1px solid #f0f0f072;
-    }
- 
-    .accessories-content .language{
-        text-align: center;
-    }
-
-    .accessories-content .social-media{
-        flex-direction: column;
-    }
-
-    .social-media span{
-        text-align: center;
-        margin: 20px 0;
-    }
-
-    .accessories-content .social-media ul{
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .copyright{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .copyright p{
-        margin-top: 10px;
-    }
-}
