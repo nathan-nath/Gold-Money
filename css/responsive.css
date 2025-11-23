@@ -9,7 +9,7 @@
         flex-direction: column; /* Mettre le menu en colonne */
         display: none;          /* Faire disparaitre le menu / menu hamburger */
         gap: 0;
-        align-items: center;
+        align-items: flex-start;
     }
 
     nav ul.show {
@@ -17,7 +17,7 @@
     }
 
     nav a {
-        font-size: 8px !important;
+        font-size: 10px !important;
         margin: 0 !important;
     }
 
@@ -58,8 +58,8 @@
     }
 
     .hero-cto .btn-darkgreen{
-        margin-bottom: 10px;
-        margin-left: 75px;
+        /* margin-bottom: 10px; */
+        /* margin-left: 75px; */
         width: 12rem;
     }
 
@@ -359,14 +359,12 @@
 
 /* Mobile grand (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
-    /* Header */
-    
-    /*
+    /* Header*/
     nav ul {
-        flex-direction: column;
+        flex-direction: column; 
         display: none;
         gap: 0;
-        align-items: center;
+        align-items: flex-start;
     }
 
     nav ul.show {
@@ -374,12 +372,12 @@
     }
 
     nav a {
-        font-size: 8px !important;
+        font-size: 12px !important;
         margin: 0 !important;
     }
 
     nav .cta-sign {
-        padding: 6px 26px;
+        padding: 8px 26px;
     }
 
     .hamburger {
@@ -388,6 +386,334 @@
     
     .brand a,
     .brand .fa-money-bills {
-        font-size: 12px !important;
-    }*/
+        font-size: 15px !important;
+    }
+
+    /* Hero section */
+    .hero-content{
+        flex-direction: column;     /* Alignement de contenus en colonne */
+        gap: 30px;                  /* Espace entre les contenus */
+    }
+
+    /* Le sous-titre */
+    .modern-bank{
+        width: 50% !important;      /* Largeur de la boite */
+        font-size: 0.8rem;          /* taille du texte */
+    }
+
+    /* Titre */
+    .hero-content h1{        
+        font-size: 2.1rem !important;        
+    }
+
+    /* Texte */
+    .p-text {
+        font-size: 1rem;
+    }
+
+    /* Buttons box */
+    .hero-cto {
+        flex-direction: column;     /* Alignement de boutons en colonne */
+    }
+
+    /* Bouton vert */
+    .hero-cto .btn-darkgreen{
+        margin-bottom: 10px;        /* Espace du côté bas */
+        margin-left: 75px;          /* Espace du côté gauche */
+        width: 12rem !important;               /* Largeur du bouton */
+    }
+
+    /* Bouton blanc */
+    .hero-cto .btn-white {
+        margin-left: 75px !important;          /* Espace du côté gauche */
+        width: 12rem;               /* Largeur du bouton */
+    }
+
+    .hero-form {
+        width: 85% !important;
+        margin-left: 0 !important;
+    }
+
+    .hero-form p {
+        font-size: 0.7rem;
+    }
+
+    .hero-content .content .partner{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .hero-content .content .partner{
+        display: flex;
+        gap: 50px;
+    }
+
+    .fa-rocket, .fa-linux, .fa-truck-ramp-box{
+        font-size: 20px;
+        color: #0d6161;
+    }
+
+    /* SONDAGE */
+    .sondage-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sondage-number{
+        text-align: center;
+        color: #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+        width: 60%;
+        margin-bottom: 15px;
+    }
+
+    .sondage-content .sondage-number h2{
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    /* CURRENCY SECTION */
+    .currency-content {
+        flex-direction: column !important;
+    }
+
+    .currency-img {
+        flex-basis: inherit;
+        width: 33vh;
+    }
+
+    .congo-flag{
+        margin-right: 0;
+    }
+
+    .ue-flag{
+        margin-left: 0;
+    }
+
+    .us-flag{
+        margin-right: 0;
+    }
+
+    /* Currency */
+    .currency-doc {
+        flex-basis: inherit;
+        width: 32vh;
+    }
+
+    .currency-doc .currency-title {
+        width: 50%;
+        font-size: 0.7rem;
+    }
+
+    .currency-doc h2.title {
+        font-size: 2rem;
+    }
+
+    .currency-doc p {
+        font-size: 0.8rem;
+    }
+
+    .currency-doc .btn-darkgreen {
+        margin-left: 90px !important;
+    }
+
+    /* Payment */
+    .payment-content {
+        flex-direction: column;
+    }
+
+    .payment-doc {
+        width: 32vh;
+    }
+
+    .payment-img {
+        display: none;
+    }
+
+    .payment {
+        width: 50%;
+    }
+
+    .payment-doc .btn-darkgreen {
+        margin-left: 90px !important;
+    }
+
+    /* Strategy */
+    .strategy-content {
+        flex-direction: column;
+    }
+
+    .watch-box {
+        text-align: center;
+    }
+
+    .watch-box p {
+        margin-bottom: 20px;
+    }
+
+    .watch-text .security-teams,
+    .watch-text .authent,
+    .watch-text .safety-funds,
+    .watch-text .account-place {
+        text-align: center;
+    }
+
+    /* Pricing */
+    .pricing-main {
+        margin: 0 0 40px 0 !important;
+    }
+
+    .pricing-title {
+        width: 30%;
+    }
+    
+    .center-title .title {
+        font-size: 2rem;
+    }
+
+    .pricing-content {
+        flex-direction: column;
+    }
+
+    .pricing-content .business {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* FAQ */
+    .faq-content {
+        padding-bottom: 80px;
+    }
+
+    /* Join */
+    .join-content {
+        flex-direction: column;
+        gap: 40px;
+        padding: 60px 0;
+    }
+
+    .join-box {
+        flex-basis: inherit;
+    }
+
+    .join-box .title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .join-box p {
+        text-align: center;
+        width: inherit;
+    }
+
+    .join-box button {
+        margin-left: 30px;
+    }
+
+    .join-form {
+        margin: auto;
+        width: 90%;
+    }
+
+    /* Footer */
+    footer{
+        padding: 1rem 0 !important;
+    }
+
+    footer .container{
+        width: auto !important;    
+    }
+
+    .footer-content{
+        flex-direction: column !important;
+    }
+    
+    .footer-boxes{
+        grid-template-columns: repeat(1, 1fr) !important;
+        gap: 0 !important;
+        padding: 10px !important;
+    }
+    
+    .footer-box{
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        border-top: 1px solid #f0f0f072 !important;
+    }
+
+    .footer-box .platform{
+        flex-basis: 50% !important;
+    }
+
+    .footer-box ul{
+        flex-basis: 50% !important;
+    }
+    
+    .footer-form{
+        border-top: 1px solid #f0f0f072 !important;
+        border-bottom: 1px solid #f0f0f072 !important;
+        padding: 20px 10px !important;
+    }
+
+    .footer-form h3{
+        text-align: center !important;   
+    }
+
+    .footer-form .input-mail{
+        border-radius: 20px !important;
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+
+    .footer-form .submit-send{
+        color: #f0f0f0 !important;
+        border-radius: 20px !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .accessories{
+        margin: 0;
+    }
+
+    .accessories-content{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+    }
+ 
+    .accessories-content .language{
+        display: none;
+    }
+
+    .accessories-content .social-media{
+       justify-content: center;
+       padding: 30px 0 0 0;
+       margin: 0;
+    }
+
+    .social-media span{
+        display: none;
+    }
+
+    .accessories-content .social-media ul{
+        flex-direction: row;
+        justify-content: center !important;
+        gap: 1rem;
+    }
+
+    .social-media-footer{
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .copyright{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright p{
+        text-align: center;
+    }
 }

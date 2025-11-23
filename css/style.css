@@ -1,7 +1,8 @@
 /* CONTAINER FOR ALL SECTIONS */
 .container{
-    width: 80%; /* La largeur de la page à 80% */
-    margin: auto; /* Le margin automatique */
+    width: 80% !important; /* La largeur maximale de la page à 80% */
+    margin: 0 auto !important;
+    padding: 1rem !important;
 }
 
 /* ALL SUBHEADLINES */
@@ -68,7 +69,7 @@ header {
     width: 100%;
 }
 
-header .nav {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,7 +78,7 @@ header .nav {
 header .brand .fa-money-bills,
 header .brand a {
     font-weight: 700 !important;
-    font-size: 18px;
+    font-size: 1.2rem;
     color: #0d6161 !important;
 }
 
