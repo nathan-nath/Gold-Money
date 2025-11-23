@@ -1,2 +1,2 @@
 # Mon premier projet en HTML & CSS 
-# Le site est pour le transfert d'argent partout dans le emonde
+# Le site est pour le transfert d'argent partout dans le monde
