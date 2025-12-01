@@ -296,7 +296,6 @@ form .grid-layout{
 
 .short-btn:hover{
     background-color: #fff;
-    border: 1px solid #0d6161;
     color: #0d6161;
 }
 
@@ -307,7 +306,6 @@ form .grid-layout{
 
 .large-btn:hover{
     background-color: #fff;
-    border: 1px solid #0d6161;
     color: #0d6161;
 }
 
@@ -675,6 +673,7 @@ p.text-pricing{
 .join-content{
     display: flex;
     flex-direction: row;
+    flex-basis: 100%;
     gap: 80px;
     background-color: rgba(96, 197, 145, 0.243);
     border-radius: 20px;
@@ -855,25 +854,19 @@ footer .container{
     margin-top: 50px;
 }
 
-.accessories-content{
+.accessories-content .accessories-btn{
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    align-items: center;
 }
 
-.accessories-content .language, .social-media{
+.accessories-btn ul {
+    display: flex !important;
+    gap: 1rem !important;
+}
+
+.follow-us {
     color: #f0f0f0;
-}
-
-.accessories-content .social-media{
-    display: flex;
-}
-
-.accessories .social-media ul{
-    display: flex;
-    justify-content: flex-start;
-    list-style-type: none;
-    gap: 10px;
 }
 
 .social-media-footer{
